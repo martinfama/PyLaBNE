@@ -259,7 +259,7 @@ def precision_recall_snapshot_files(snapshot_t0 = ng.Network, snapshot_t1 = ng.N
     for i in range(0, total_edges):
         line = PR_LP_sorted.readline()
         l = line.split(' ')
-        if l[2] != '0.0':
+        if l[2] != '0.0\n':
             l = l[1] == '1'
             
             if l:
